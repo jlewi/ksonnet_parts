@@ -8,7 +8,7 @@
 // @optionalParam redisPassword string null User password to supply to redis
 
 local k = import 'k.libsonnet';
-local redis = import 'incubator/redis/redis.libsonnet';
+local redis = import 'incubator/tf-serving/tf-serving.libsonnet';
 
 local name = import 'param://name';
 local redisPassword = import 'param://redisPassword';
