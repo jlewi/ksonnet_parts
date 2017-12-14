@@ -1,40 +1,36 @@
 {
-   "name": "redis",
+   "name": "tf-serving",
    "apiVersion": "0.0.1",
    "kind": "ksonnet.io/parts",
-   "description": "Redis is an advanced key-value cache and store. Often referred to as a data structure server since keys can contain structures as simple as strings, hashes and as complex as bitmaps and hyperloglogs. This package will deploy redis backed by a mounted persistent volume, a secret to hold your database password and a service to expose your deployment.\n",
-   "author": "ksonnet team <ksonnet-help@heptio.com>",
+   "description": "TensorFlow serving is a server for TensorFlow models.\n",
+   "author": "kubeflow team <kubeflow-team@google.com>",
    "contributors": [
       {
-         "name": "Tehut Getahun",
-         "email": "tehut@heptio.com"
+         "name": "Jeremy Lewi",
+         "email": "jlewi@google.com",
       },
-      {
-         "name": "Tamiko Terada",
-         "email": "tamiko@heptio.com"
-      }
    ],
    "repository": {
       "type": "git",
-      "url": "https://github.com/ksonnet/mixins"
+      "url": "https://github.com/google/kubeflow"
    },
    "bugs": {
-      "url": "https://github.com/ksonnet/mixins/issues"
+      "url": "https://github.com/google/kubeflow/issues"
    },
    "keywords": [
-      "redis",
-      "persistent",
+      "kubeflow",
+      "tensorflow",
       "database"
    ],
    "quickStart": {
-      "prototype": "io.ksonnet.pkg.redis-persistent",
+      "prototype": "io.ksonnet.pkg.tf-serving",
       "componentName": "redis",
       "flags": {
-         "name": "redis",
+         "name": "tf-serving",
          "namespace": "default",
          "password": "boots"
       },
-      "comment": "Run simple Redis, backed by a PersistentVolume"
+      "comment": "Run TensorFlow Serving"
    },
    "license": "Apache 2.0"
 }
